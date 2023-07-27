@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shutter</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/5dea0d8c14.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <section id="header">
+    <nav>
+      <figure class="logo__wrapper">
+        <img class="logo" src="./assets/shutter 2.png" alt="" />
+      </figure>
+      <ul>
+        <li class="nav-link link__hover-effect"><a href="#">Home</a></li>
+        <li class="nav-link link__hover-effect"><a href="#">Browse</a></li>
+        <li class="nav-link contact"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+      <div class="row">
+        <div class="container">
+          <div class="header__info">
+            <h1 class="header__info--title orange">
+              Australia's most popular movie streaming platform
+            </h1>
+            <h3 class="header__info--subtitle">
+              Find just the movie you're looking for with
+              <span class="orange">Shutter</span>
+            </h3>
+          </div>
+          <div class="search-bar">
+            <input
+              id = "search"
+              type="text"
+              class="search-bar__input"
+              placeholder="Search by movie title"       
+            />
+            <button class="search-bar__button" onclick="search()">
+              <i class="fas fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="movies">
+      <div class="row">
+        <div class="container">
+          <h4>Search results:</h4>
+          <div class="movies__container">
+            <i class="fas fa-spinner loading-spinner"></i>
+            <!-- <div class="movie">
+              <figure class="poster__wrapper">
+                <img class="poster" src="./assets/poster.jpg" alt="">
+              </figure>
+              <h5>Movie Title</h5>
+              <h6>Year</h6>
+            </div>
+            <div class="movie">
+              <figure class="poster__wrapper">
+                <img src="" alt="">
+              </figure>
+              <h5>Movie Title</h5>
+              <h6>Year</h6>
+            </div>
+            <div class="movie">
+              <figure class="poster__wrapper">
+                <img src="" alt="">
+              </figure>
+              <h5>Movie Title</h5>
+              <h6>Year</h6>
+            </div>
+            <div class="movie">
+              <figure class="poster__wrapper">
+                <img src="" alt="">
+              </figure>
+              <h5>Movie Title</h5>
+              <h6>Year</h6>
+            </div>
+            <div class="movie">
+              <figure class="poster__wrapper">
+                <img src="" alt="">
+              </figure>
+              <h5>Movie Title</h5>
+              <h6>Year</h6>
+            </div>
+            <div class="movie">
+              <figure class="poster__wrapper">
+                <img src="" alt="">
+              </figure>
+              <h5>Movie Title</h5>
+              <h6>Year</h6>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <footer>
+    <p class="footer__info">Copyright © Shutter 2023</p>
+  </footer>
+</html>
