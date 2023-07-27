@@ -35,11 +35,17 @@ async function renderMovies(prompt) {
 }
 
 function search() {
+    if (document.getElementById("search-results__heading").classList !== "") {
+        document.getElementById("search-results__heading").classList.remove("search-results__heading--visibility");
+    }
     renderMovies(searchbar.value);
 }
 
 searchbar.addEventListener("keyup", event => {
     if (event.key === "Enter") {
+        if (document.getElementById("search-results__heading").classList !== "") {
+            document.getElementById("search-results__heading").classList.remove("search-results__heading--visibility");
+        }
         search();
     }
 });

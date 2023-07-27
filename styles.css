@@ -199,6 +199,10 @@ MOVIES
     /* display: none; */
 }
 
+.search-results__heading--visibility {
+    display: none;
+}
+
 h4 {
     margin-bottom: 50px;
     color: #ff501f;
